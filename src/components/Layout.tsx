@@ -13,7 +13,7 @@ return (
     `}>
         <Titulo>{props.titulo}</Titulo>
         <div className="p-6">
-        {props.children}
+            {props.children}
         </div>
     </div>
 )
