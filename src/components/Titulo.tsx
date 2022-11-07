@@ -1,4 +1,4 @@
-export default function Titulo(props:any){
+export default function Titulo(props: any){
 
 return (
     <div className="flex flex-col justify-center">
