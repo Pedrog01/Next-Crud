@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Botao from "./Botao";
 import Entrada from "./Entrada";
+import Cliente from "../core/Cliente"
 
 interface FormularioProps{
     cliente : Cliente 
@@ -15,7 +16,7 @@ export default function Formulario(props: FormularioProps){
         <div>
 
         {id ?(
-              <Entrada 
+              <Entrada
               somenteLeitura
               texto="Código" 
               valor={id}
