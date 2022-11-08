@@ -53,7 +53,7 @@ function renderizarAcoes(cliente:Cliente ){
             ) : false}
            
             {props.clienteExcluido ? (
-                <button onClick={()=> props.clienteExcluido?.(cliente)} className={`
+                <button onClick={()=> props.clienteExcluido ?.(cliente)} className={`
                  flex justify-center items-center
                 text-red-600 rounded-full p-2 m-1
                 hover:bg-purple-50

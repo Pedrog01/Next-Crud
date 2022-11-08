@@ -1,3 +1,5 @@
+import Botao from "../components/Botao";
+import Formulario from "../components/Formulario";
 import Layout from "../components/Layout";
 import Tabela from "../components/Table";
 import Cliente from "../core/Cliente";
@@ -8,7 +10,7 @@ export default function Home() {
     new Cliente('Ana', 20,'1'),
     new Cliente('Bia', 30,'2'),
     new Cliente('Laura', 18,'3'),
-    new Cliente('Paula', 21,'4'),
+    new Cliente('Pedro', 21,'4'),
   
   ]
 
@@ -16,7 +18,7 @@ export default function Home() {
 
   }
   function clienteExcluido(cliente:Cliente){
-    console.log(`Excluir...${cliente.nome}`)
+    console.log(`Excluir...${cliente.nome }`)
   }
 
 
@@ -28,10 +30,19 @@ export default function Home() {
     `}>
   
       <Layout titulo="Cadastro Simples">
+        <div className="flex justify-end">
+          <Botao className="mb-4">Novo Cliente</Botao>
+        </div>
+        {/* 
         <Tabela clientes={clientes}
         clienteSelecionado={clienteSelecionado} 
         clienteExcluido={clienteExcluido}/>
+        */}
+
+       <Formulario cliente={clientes[2]}></Formulario>
       </Layout>
+    
+     
     </div>
   )
 
